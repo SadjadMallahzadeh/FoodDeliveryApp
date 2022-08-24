@@ -48,11 +48,12 @@ class MainScreenPresenter(private val foodDao: FoodDao) : MainScreenContract.Pre
     }
 
     override fun onFirstRun(username: String?) {
+          foodDao.insertAllFoodItems(InitFoodList.getInitFoodlist())
+          
         //it is weird but as long as we have not call the fooddao.get method we can not save or update the new dataset in that food dao
         // to verify that we can just uncomment and comment two next line respectively!
-
-
-        foodDao.insertAllFoodItems(InitFoodList.getInitFoodlist())
+   
+        //        mainView!!.showFoods(InitFoodList.getInitFoodlist(), username)
         mainView!!.showFoods(foodDao.getAllFoodItems(), username)
 
     }

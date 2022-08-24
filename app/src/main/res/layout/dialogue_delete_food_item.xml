@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/BasketShopRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="Are you sure you want to delete this Item?"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogue_btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="YEs"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_delete_"
+        app:iconPadding="12dp"
+
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dialogue_btn_cancel"
+        app:layout_constraintTop_toTopOf="@+id/dialogue_btn_cancel" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogue_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:text="No"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_cancel"
+        app:iconPadding="12dp"
+
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/dialogue_btn_confirm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BasketShopRecycler" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

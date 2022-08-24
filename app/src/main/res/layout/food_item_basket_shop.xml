@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="10dp"
+    android:paddingBottom="4dp"
+
+>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/foodItemImage"
+
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:adjustViewBounds="true"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/koobidehsquare" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:fontFamily="@font/product_sans_bold"
+        android:id="@+id/foodItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Chelokabab Koobideh"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <TextView
+    android:layout_marginTop="13dp"
+        android:textStyle="bold"
+        android:id="@+id/foodItemType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persian Cuisine"
+        android:textSize="10sp"
+
+
+        app:layout_constraintStart_toStartOf="@+id/foodItemName"
+        app:layout_constraintTop_toBottomOf="@+id/foodItemName" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:id="@+id/foodItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€ 16"
+        android:textSize="10sp"
+
+        app:layout_constraintStart_toStartOf="@+id/foodItemType"
+        app:layout_constraintTop_toBottomOf="@+id/foodItemType" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:id="@+id/foodItemDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45 min delivery time"
+        android:textSize="10sp"
+
+        app:layout_constraintStart_toStartOf="@+id/foodItemPrice"
+        app:layout_constraintTop_toBottomOf="@+id/foodItemPrice" />
+
+    <RatingBar
+        android:rating="3"
+
+        android:progressTint="@color/yellow"
+
+
+        android:layout_marginEnd="16dp"
+        android:id="@+id/foodItemRatingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <TextView
+        android:padding="4dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/foodItemRatingCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(92 Ratings)"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/foodItemRatingBar"
+        app:layout_constraintStart_toStartOf="@+id/foodItemRatingBar"
+        app:layout_constraintTop_toBottomOf="@+id/foodItemRatingBar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/foodItemRatingCount"
+        app:layout_constraintStart_toStartOf="@+id/foodItemRatingCount"
+        app:layout_constraintTop_toBottomOf="@+id/foodItemRatingCount">
+
+
+        <ImageView
+            android:id="@+id/decreaseOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_minusorderbox"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/minusOrderGreen" />
+
+
+        <TextView
+            android:id="@+id/foodItemOrderQuanitty"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:textSize="20dp" />
+
+        <ImageView
+
+            android:layout_gravity="center_vertical"
+            android:id="@+id/increaseOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_addorderbox"
+            app:tint="@color/addOrderGreen" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

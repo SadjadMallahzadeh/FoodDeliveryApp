@@ -9,6 +9,6 @@ Customer Panel for placing food order
 
 ![Admin_Panel](https://user-images.githubusercontent.com/102520480/186522780-f46e375f-306f-4d59-bbf4-1dce1c09ee49.gif)
 <br />
-Admin panel with access to Add. Update and remove food Utems on the menu
+Admin panel with higher access level in order to Add, Update and Remove food items on the menu
 
 

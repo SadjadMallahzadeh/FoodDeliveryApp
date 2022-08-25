@@ -5,7 +5,7 @@ An native food delivery android application with MVP architecture. The Applicati
 ![Customer_Panel](https://user-images.githubusercontent.com/102520480/186522157-8bef01fa-2d2c-4c08-818b-ac9eea847975.gif) 
 <br />
 Customer Panel for placing food order
-<br />
+<br /><br /><br />
 
 ![Admin_Panel](https://user-images.githubusercontent.com/102520480/186522780-f46e375f-306f-4d59-bbf4-1dce1c09ee49.gif)
 <br />

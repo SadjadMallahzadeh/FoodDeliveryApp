@@ -137,11 +137,7 @@ class FoodMenuAdapter(
         if (isMainAdapter) {
             binding = FoodItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         } else {
-            binding = FoodItemBasketShopBinding.inflate(
-                LayoutInflater.from(parent.context),
-                parent,
-                false
-            )
+            binding = FoodItemBasketShopBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         }
 
         return FoodMenuViewHolder(binding)
